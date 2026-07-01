@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Gung Padilah</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0d6efd,#4e73df);
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ffd43b;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px 10%;
+background:white;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero-text span{
+color:#0d6efd;
+}
+
+.hero-text p{
+margin-bottom:20px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+background:#0d6efd;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+margin-right:10px;
+}
+
+.btn:hover{
+background:#084298;
+}
+
+.hero img{
+width:320px;
+height:320px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 0 30px rgba(0,0,0,.2);
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#0d6efd;
+}
+
+.about{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill-name{
+font-weight:bold;
+}
+
+.bar{
+height:15px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#0d6efd;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.timeline{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact i{
+font-size:30px;
+margin:15px;
+color:#0d6efd;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero img{
+margin-bottom:30px;
+width:250px;
+height:250px;
+}
+
+.hero-text h1{
+font-size:35px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">PORTOFOLIO</div>
+
+<nav>
+<a href="#about">Tentang</a>
+<a href="#skill">Skill</a>
+<a href="#pendidikan">Pendidikan</a>
+<a href="#proyek">Proyek</a>
+<a href="#sertifikat">Sertifikat</a>
+<a href="#kontak">Kontak</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Halo, Saya <span>Gung Padilah</span></h1>
+
+<p>
+seorang mahasiswa yang memiliki ketertarikan di bidang teknologi, bisnis digital, dan dunia otomotif. Saya aktif menjalankan usaha jual beli PlayStation (PS), mulai dari penjualan konsol, aksesori, hingga membantu pelanggan menemukan perangkat gaming yang sesuai dengan kebutuhan mereka.</p>
+
+<a href="#" class="btn">
+<i class="fa fa-download"></i> Download CV
+</a>
+
+<a href="#kontak" class="btn">
+Hubungi Saya
+</a>
+
+</div>
+
+<img src="profil.jpeg" alt="Foto Profil">
+</section>
+
+<section id="about">
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="about">
+<p>
+Mahasiswa | Pebisnis Jual Beli PlayStation | Pecinta Otomotif & Alam
+Saya mengembangkan bisnis jual beli PlayStation sekaligus menyalurkan hobi berkendara motor dan menjelajahi alam. Saya percaya bahwa setiap perjalanan, baik dalam bisnis maupun petualangan, adalah kesempatan untuk belajar, berkembang, dan mencapai tujuan yang lebih besar.</p>
+</div>
+
+</section>
+
+<section id="skill">
+
+<h2 class="title">Keahlian</h2>
+
+<div class="skill">
+<div class="skill-name">Jual Beli PlayStation</div>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Dasar-dasar Bisnis dan Digital Marketing</div>
+<div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Teknologi Informasi & Web Development</div>
+<div class="bar"><div class="fill" style="width:50%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Otomotif</div>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Hiking & Eksplorasi Alam</div>
+<div class="bar"><div class="fill" style="width:55%"></div></div>
+</div>
+
+</section>
+
+<section id="pendidikan">
+
+<h2 class="title">Pendidikan</h2>
+
+<div class="timeline">
+<h3>SD NEGRI IBUN 2 </h3>
+<p></p>
+<p>2013 - 2019</p>
+</div>
+
+<div class="timeline">
+<h3>SMPN 2 IBUN</h3>
+<p></p>
+<p>2019 - 2022</p>
+</div>
+
+<div class="timeline">
+<h3>SMK Informatika Terpadu Bandung</h3>
+<p>Jurusan Teknik Komputer dan Jaringan(TKJ)</p>
+<p>2022 - 2025</p>
+</div>
+
+</section>
+
+<section id="proyek">
+
+<h2 class="title">Proyek Saya</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="website.png">
+<div class="card-content">
+<h3>Website Sekolah</h3>
+<p>Sistem informasi sekolah lengkap dengan login admin.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="modip.png">
+<div class="card-content">
+<h3>logo</h3>
+<p>Menciptakan logo yang kreatif, sederhana, dan mudah diingat sebagai identitas visual yang kuat.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="marketing.jpg">
+<div class="card-content">
+<h3>Desain Gambar</h3>
+<p>Menghasilkan desain gambar yang kreatif, informatif, dan menarik untuk berbagai kebutuhan visual.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hiking.jpeg">
+<div class="card-content">
+<h3>Kartu Nama</h3>
+<p>Merancang kartu nama yang profesional, menarik, dan mampu mencerminkan identitas secara efektif.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<section id="kontak">
+
+<h2 class="title">Kontak</h2>
+
+<div class="contact">
+
+<p>Email : Temiagung4@email.com</p>
+<p>WhatsApp : 081232386968</p>
+
+<i class="fab fa-instagram"></i>
+<i class="fab fa-whatsapp"></i>
+<i class="fab fa-github"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Gung Padilah | All Rights Reserved
+</footer>
+
+</body>
+</html>
