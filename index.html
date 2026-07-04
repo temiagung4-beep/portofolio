@@ -197,6 +197,43 @@ padding:20px;
 flex-direction:column-reverse;
 text-align:center;
 }
+.certificate-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.certificate{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+text-align:center;
+}
+
+.certificate:hover{
+transform:translateY(-8px);
+}
+
+.certificate img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.certificate h3{
+color:#0d6efd;
+margin-bottom:10px;
+}
+
+.certificate p{
+font-size:14px;
+line-height:1.6;
+}
 
 .hero img{
 margin-bottom:30px;
@@ -320,6 +357,7 @@ Saya mengembangkan bisnis jual beli PlayStation sekaligus menyalurkan hobi berke
 </section>
 
 <section id="proyek">
+</p>
 
 <h2 class="title">Proyek Saya</h2>
 
